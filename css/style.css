@@ -1,0 +1,139 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  color: rgb(255, 252, 234);
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  background-color: rgb(252, 250, 234);
+
+  overflow-x: hidden;
+}
+/*  Header  */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+header {
+  background-color: rgb(15, 63, 94);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+  width: 100%;
+}
+
+#LinksHeader {
+  display: flex;
+  align-items: center;
+}
+
+#LinksHeader li {
+  margin: 10px 10px 0px 0px;
+}
+
+header img {
+  width: 200px;
+}
+
+/*  Sobre Nós  */
+
+#SobreNos {
+  background-color: rgb(24, 74, 106);
+  display: flex;
+  height: 498px;
+  align-items: center;
+  width: 100%;
+}
+
+#TextoSobreNos {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#TextoSobreNos h1 {
+  font-weight: 500;
+  font-size: xx-large;
+}
+#TextoSobreNos p {
+  font-weight: 200;
+}
+
+#ImagemSobreNos {
+  width: 40%;
+  height: 100%;
+}
+
+/*  Depoimentos  */
+
+#Depoimentos {
+  display: flex;
+  width: 70%;
+  padding: 0px 30px;
+  margin: 30px 0px;
+  background-color: rgb(252, 250, 234);
+  margin-bottom: 200px;
+}
+#TextosDepoimentos h1 {
+  color: rgb(24, 74, 106);
+  margin-bottom: 50px;
+}
+#TextosDepoimentos p {
+  color: rgb(196, 113, 10);
+}
+
+/*  Footer  */
+footer {
+  width: 100%;
+  background-color: rgb(15, 63, 94);
+  position: relative;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
+  padding: 20px;
+}
+
+footer a {
+  color: #ffeb3b;
+}
+
+/* Responsividade */
+
+@media (max-width: 700px) {
+  header {
+    justify-content: center;
+  }
+
+  #LinksHeader {
+    display: none;
+  }
+
+  #SobreNos {
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+  #TextoSobreNos {
+    padding: 20px;
+  }
+
+  #ImagemSobreNos {
+    width: 100%;
+  }
+}
